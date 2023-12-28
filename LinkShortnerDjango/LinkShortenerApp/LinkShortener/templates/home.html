@@ -1,0 +1,10 @@
+{% extends "base.html" %} {% block title %} Home Page {% endblock %}
+{% block content %}
+<form action="" method="POST">{% csrf_token %}
+    <div class="form-group">
+      <label for="link">Insert long link:</label>
+      <input type="text" class="form-control" id="link" placeholder="..." name="link">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
